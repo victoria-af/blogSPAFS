@@ -8,6 +8,14 @@
 
     <div class="list-area">
     <h2>Últimas noticias</h2>
-
+    
+        @for (news of newsList; track news) {
+    <article class="news-card">
+    <h3>{{ news.title }}</h3>
+    <img [src]="news.imageUrl" alt="Imagen de la noticia" />
+    <p>{{ news.text }}</p>
+    <p class="fecha">{{ news.date }}</p>
+    </article>
+    }
     </div>
 </section>

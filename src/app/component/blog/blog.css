@@ -18,4 +18,26 @@ h1, h2 {
     margin-top: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+.news-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+}
+
+.news-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.fecha {
+    font-size: 0.85rem;
+    color: #666;
+}
+
 }
