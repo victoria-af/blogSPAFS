@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
 import { INews } from '../../interfaces/inews.interface';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './blog.html',
   styleUrl: './blog.css'
 })
 export class Blog {
+    newPost: INews = {
+    title: '',
+    imageUrl: '',
+    text: '',
+    date: ''
+  };
 newsList: INews[] = [
   {
     title: 'Titulo noticia 1',
@@ -23,5 +30,26 @@ newsList: INews[] = [
     date: '2025-07-05'
   }
 ];
+addPost(eventoFormulario: Event) {
+  eventoFormulario.preventDefault();
 
+  if (
+    !this.newPost.title.trim() ||
+    !this.newPost.imageUrl.trim() ||
+    !this.newPost.text.trim() ||
+    !this.newPost.date.trim()
+  ) {
+    alert('Por favor, completa todos los campos antes de publicar.');
+    return;
+  }
+
+  this.newsList.push({ ...this.newPost });
+
+  this.newPost = {
+    title: '',
+    imageUrl: '',
+    text: '',
+    date: ''
+  };
+}
 }
