@@ -1,46 +1,7 @@
 <section class="blog-container">
     <h1>Mi Blog</h1>
 
-    <div class="form-area">
-    <h2>Nueva publicación</h2>
-<form (submit)="addPost($event)" class="formulario">
-    <label for="titulo">Título:</label>
-    <input
-    id="titulo"
-    type="text"
-    [(ngModel)]="newPost.title"
-    name="title"
-    />
-
-    <label for="imagen">Imagen (URL):</label>
-    <input
-    id="imagen"
-    type="text"
-    [(ngModel)]="newPost.imageUrl"
-    name="imageUrl"
-    />
-
-    <label for="texto">Texto:</label>
-    <textarea
-    id="texto"
-    [(ngModel)]="newPost.text"
-    name="text"
-    ></textarea>
-
-    <label for="fecha">Fecha:</label>
-    <input
-    id="fecha"
-    type="date"
-    [(ngModel)]="newPost.date"
-    name="date"
-    />
-
-    <button type="submit">Publicar</button>
-</form>
-
-    </div>
-
-    <div class="list-area">
+        <div class="list-area">
     <h2>Últimas noticias</h2>
 
         @for (news of newsList; track news) {
@@ -52,4 +13,44 @@
     </article>
     }
     </div>
+    
+    <div class="form-area">
+    <h2>Nueva publicación</h2>
+    <form (submit)="addPost($event)" class="formulario">
+        <label for="titulo">Título:</label>
+        <input
+        id="titulo"
+        type="text"
+        [(ngModel)]="newPost.title"
+        name="title"
+        />
+
+        <label for="imagen">Imagen (URL):</label>
+        <input
+        id="imagen"
+        type="text"
+        [(ngModel)]="newPost.imageUrl"
+        name="imageUrl"
+        />
+
+        <label for="texto">Texto:</label>
+        <textarea
+        id="texto"
+        [(ngModel)]="newPost.text"
+        name="text"
+        ></textarea>
+
+        <label for="fecha">Fecha:</label>
+        <input
+        id="fecha"
+        type="date"
+        [(ngModel)]="newPost.date"
+        name="date"
+        />
+
+        <button type="submit">Publicar</button>
+    </form>
+    </div>
+
+
 </section>

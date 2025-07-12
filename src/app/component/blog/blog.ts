@@ -18,16 +18,16 @@ export class Blog {
   };
 newsList: INews[] = [
   {
-    title: 'Titulo noticia 1',
-    imageUrl: "https://placehold.co/600x300",
-    text: 'texto de la noticia 1',
-    date: '2025-07-01'
-  },
-  {
     title: 'Titulo noticia 2',
     imageUrl: "https://placehold.co/600x300",
     text: 'texto de la noticia 2',
     date: '2025-07-05'
+  },
+  {
+    title: 'Titulo noticia 1',
+    imageUrl: "https://placehold.co/600x300",
+    text: 'texto de la noticia 1',
+    date: '2025-07-01'
   }
 ];
 addPost(eventoFormulario: Event) {
@@ -43,7 +43,7 @@ addPost(eventoFormulario: Event) {
     return;
   }
 
-  this.newsList.push({ ...this.newPost });
+this.newsList.unshift({ ...this.newPost });
 
   this.newPost = {
     title: '',
