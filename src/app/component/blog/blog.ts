@@ -25,7 +25,7 @@ newsList: INews[] = [
 
   },
   {
-    title: 'Benicàssim y la òpera de la meada: verano, 35 grados y algo en la nariz',
+    title: 'Benicàssim y la òpera de la meada: verano, 35 grados y algo huele en la nariz',
     imageUrl: "https://images.unsplash.com/photo-1561330496-d56b29ae9494?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     text: 'En verano, Benicàssim multiplica su población hasta cinco veces, y con ella llegan los perros, los paseos matutinos y las meadas masivas en cada esquina. A las 8 de la mañana, con 35 grados pegando fuerte, el pis fermentado decora las aceras como parte del paisaje costero. Resultado: un aroma matinal que no perdona ni al que baja a por pan.<br><br>El problema no son los perros, sino los humanos que olvidan la botella de agua con lejía y confunden el paseo con vía libre sin consecuencias. El ayuntamiento, mientras tanto, ni aparece con camiones de limpieza ni activa campañas reales: solo hay castillos iluminados y sanciones por sombrillas torcidas. Y el pis, a lo suyo, oxidándose al sol.<br><br>La solución es tan simple como barata, pero en Benicàssim parece que barrer el suelo cuesta más que montar un escenario. Así que, si madrugas en agosto, no esperes brisa marina: lo que llega es el perfume oficial de la temporada –“Meadas sin fronteras”–. Y sí, puedes cerrar la ventana… pero el olor se queda.',
     date: '2025-07-05'
